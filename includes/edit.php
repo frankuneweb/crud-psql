@@ -12,9 +12,10 @@ if(isset($_GET['id'])) {
                                                    direccion = '$direccion',
                                                    telefono = '$telefono' 
                                                    where id = $id ");
-   if($query) 
+   if($query) {
+
       echo "1";
-   else 
+   }   else 
       echo "hubo un error";
 } else {
    header("location: ../index.html");
