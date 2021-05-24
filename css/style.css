@@ -1,0 +1,5 @@
+@import url(bulma.min.css);
+
+.modal-content {
+   border-radius: 6px;
+}

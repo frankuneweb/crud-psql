@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+   <header>
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+         <div class="navbar-brand">
+           <a class="navbar-item" href="./">
+            <h3>K-Mart</h3>
+           </a>
+       
+           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+             <span aria-hidden="true"></span>
+             <span aria-hidden="true"></span>
+             <span aria-hidden="true"></span>
+           </a>
+         </div>
+       
+         <div id="menu" class="navbar-menu">
+           <div class="navbar-start">
+             <a class="navbar-item">
+               Proveedores
+             </a>
+       
+             <a class="navbar-item">
+               Productos
+             </a>
+      
+           </div>
+       
+           <div class="navbar-end">
+             <div class="navbar-item">
+               <div class="buttons">
+                 <a class="button is-primary">
+                   <strong>Registro</strong>
+                 </a>
+                 <a class="button is-light">
+                   Inicia sesión
+                 </a>
+               </div>
+             </div>
+           </div>
+         </div>
+      </nav>
+   </header>
+
+
+
+   <div id="notis" class="notification is-hidden is-radiusless"></div>
+
+
+
+   <section class="section">
+      <div class="container">
+
+         <button id="agregar-prov" class="button is-link mb-5">Agregar Proveedor</button>
+
+         <div id="provs">
+
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+
+   <!-- Modals -->
+
+
+
+   <div id="modal-agregar" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white">
+
+        <div class="block p-6">
+         
+         <h2 class="subtitle">Agregar Proveedor</h2>
+
+         <form id="guarda-prov">
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="nombre" placeholder="Nombre" required>
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="rif" placeholder="RIF">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="direccion" placeholder="Dirección">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="telefono" placeholder="Teléfono">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="button" class="button is-link" id="guardar" value="Guardar">
+               </div>
+            </div>
+            
+         </form>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+
+
+
+   <div id="modal-editar" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white">
+
+        <div class="block p-6">
+         
+         <h2 class="subtitle">Editar Proveedor</h2>
+
+
+         <form id="edita-prov">
+            <input type="hidden" name="id">
+
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="nombre" placeholder="Nombre" required>
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="rif" placeholder="RIF">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="direccion" placeholder="Dirección">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="text" class="input" name="telefono" placeholder="Teléfono">
+               </div>
+            </div>
+            <div class="field">
+               <div class="control">
+                  <input type="button" class="button is-link" id="editar" value="Editar">
+               </div>
+            </div>
+            
+         </form>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+   <script src="js/jquery.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
